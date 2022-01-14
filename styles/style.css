@@ -1,0 +1,60 @@
+/*-------------
+commont styles
+---------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header styles */
+.head-container{
+    margin-left: 100px;
+    margin-right: 150px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header{
+    display: flex;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+/* Journey Starter Styles */
+.Journey-section{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+}
+.prebook a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.prebook{
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    border: none;
+    padding: 13px;
+    border-radius: 41px;
+}
+.circle-photo{
+    position: relative;
+    left: 300px;
+    top: 50px;
+}
+.main-camera{
+    position: relative;
+    right: 150px;
+    top: 50px;
+    width: 440px;
+    height: 414px;
+}
