@@ -3,10 +3,24 @@ commont styles
 ---------------*/
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 main{
     width: 80%;
 }
+
+
+/* horizontal styles */
+/* .horizontal{
+    display: flex;
+    flex-direction: column;
+} */
+.hr-one{
+    margin-left: 300px;
+    margin-top: 100px;
+    width: 1300px;
+    border: 1px solid #f7f5f5;
+} 
 
 
 /* header styles */
@@ -26,7 +40,13 @@ header{
 header a{
     text-decoration: none;
     color: black;
-    padding-right: 30px;
+    margin-right: 30px;
+}
+.right> a:hover{
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 2px;
+    border-radius: 8px;
 }
 
 /* Journey Starter Styles */
@@ -40,9 +60,16 @@ header a{
 .description{
     margin-top: 70px;
 }
+.description h1{
+    font-size: 52px;
+}
 .prebook a{
     text-decoration: none;
     color: #FFFFFF;
+}
+.prebook:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
 }
 .prebook{
     font-size: 16px;
@@ -54,13 +81,13 @@ header a{
 }
 .circle-photo{
     position: relative;
-    left: 650px;
+    left: 180px;
     top: 50px;
 }
 .main-camera{
     position: relative;
-    right: -200px;
-    top: -150px;
+    left: 200px;
+    bottom: 400px;
     width: 420px;
     height: 40px;
 }
@@ -86,6 +113,10 @@ header a{
     justify-content: center;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+}
+.collection:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 .collection img{
     width: 250px;
@@ -114,15 +145,39 @@ header a{
     margin-top: 50px;
     text-align: right;
     margin-right: 110px;
+    margin-bottom: 50px;
 }
 .next-page a{
     text-decoration: none;
     font-size: 16px;
     color: #E02C6D;
 }
+
+
+/* footer styles */
+
+
 footer{
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-color: #0A0826;
     color: #FFFFFF;
     font-weight: 700;
+}
+.footer h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+.text{
+    text-align: center;
+}
+.social a{
+    margin: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.social{
+    text-align: center;
 }
