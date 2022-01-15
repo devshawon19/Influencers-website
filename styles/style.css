@@ -4,30 +4,18 @@ commont styles
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
 }
 main{
     width: 80%;
 }
 
 
-/* horizontal styles */
-/* .horizontal{
-    display: flex;
-    flex-direction: column;
-} */
-.hr-one{
-    margin-left: 300px;
-    margin-top: 100px;
-    width: 1300px;
-    border: 1px solid #f7f5f5;
-} 
 
 
 /* header styles */
 .head-container{
-    margin-left: 100px;
-    margin-right: 150px;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,11 +24,18 @@ main{
 header{
     display: flex;
     justify-content: center;
+    background-color: #0A0826;
 }
 header a{
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
     margin-right: 30px;
+}
+.left{
+    margin-left: 120px;
+}
+.right{
+    margin-right: 120px
 }
 .right> a:hover{
     color: #FFFFFF;
@@ -51,7 +46,7 @@ header a{
 
 /* Journey Starter Styles */
 .Journey-section{
-    margin-left: 150px ;
+    margin-left: 100px;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -59,6 +54,7 @@ header a{
 }
 .description{
     margin-top: 70px;
+    margin-left: 50px;
 }
 .description h1{
     font-size: 52px;
@@ -90,6 +86,30 @@ header a{
     bottom: 400px;
     width: 420px;
     height: 40px;
+}
+/* horizontal styles */
+.horizontal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hr-one{
+    margin-left: 350px;
+    margin-top: 100px;
+    width: 1300px;
+    border: 1px solid #f7f5f5;
+} 
+.e-commerce img{
+    padding: 20px;
+}
+.e-commerce{
+    margin-left: 450px;
+}
+.hr-two{
+    margin-left: 350px;
+    width: 1300px;
+    border: 1px solid #f7f5f5;
 }
 
 /* popular collection styles */
@@ -153,6 +173,32 @@ header a{
     color: #E02C6D;
 }
 
+/* session section starts */
+.photo-session{
+    width: 70%;
+    display: flex;
+    margin-left: 500px ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.photo-session img{
+    margin-top: 50px;
+    width: 390px;
+    height: 220px;
+    border-radius: 20px;
+}
+.session-text{
+    margin: 100px;
+}
+.session-text a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 8px;
+    border-radius: 10px;
+}
+
 
 /* footer styles */
 
@@ -171,13 +217,144 @@ footer{
     font-weight: 400;
 }
 .text{
+    margin-top: 25px;
     text-align: center;
 }
 .social a{
-    margin: 16px;
+        margin: 10px;
     text-decoration: none;
     color: #FFFFFF;
 }
 .social{
     text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* ---------------------
+ responsive styles
+---------------------- */
+@media only screen and (max-width:687px){
+    /* common styles */
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    /* header section */
+    .head-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .left{
+        margin: 0;
+    }
+    .right{
+        display: none;
+        justify-content: flex-end;
+    }
+    
+    /* Journey section */
+    .Journey-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .description h1{
+        font-size: 30px;
+    }
+    .photos{
+        margin: 0;
+    }
+    .circle-photo{
+        position: relative;
+        left: 35px;
+        top: 70px;
+    }
+    .circle-photo img{
+        width: 257px;
+        height: 257px;
+    }
+    .main-camera{
+        position: relative;
+        left: 45px;
+        bottom: 160px;        
+    }
+    .main-camera img{
+        width: 202px;
+        height: 190px;
+    }
+    /* horizontal styles */
+    .horizontal{
+        width: 100%;
+        margin-left: 50px;
+    }
+    hr{
+        display: none;
+    }
+    .e-commerce{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    /* popular section styles */
+    .popular-section{
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .popular-section> h1{
+        margin-left: 110px;
+    }
+    .collections{
+        margin-left:25%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:30px;
+        width: 50%;
+    }
+
+    /* session section starts */
+.photo-session{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.photo-session img{
+    margin: 0;
+    padding: 0;
+    width: 305px;
+    height: 188px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.session-text{
+    margin: 0;
+}
+/* Footer styles */
+/* footer styles */
+
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    font-weight: 700;
 }
