@@ -103,6 +103,11 @@ header a{
 .e-commerce img{
     padding: 20px;
 }
+.e-commerce > img:hover{
+    margin-bottom: 2px;
+    transform: scale(1.3);
+    transition: transform, pading 1s ease-in-out;
+}
 .e-commerce{
     margin-left: 450px;
 }
